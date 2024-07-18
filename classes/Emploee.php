@@ -1,6 +1,6 @@
 <?php
 
-namespace classes\FileWriter;
+namespace classes;
 
 require_once '/home/ukki/www/obuchalovo/classes/User.php';
 use classes\FileWriter\User;

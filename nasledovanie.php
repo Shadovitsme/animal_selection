@@ -1,8 +1,8 @@
 <?php
-namespace nasledovanie;
+//namespace nasledovanie;
 
 require_once '/home/ukki/www/obuchalovo/classes/Driver.php';
-use \classes\FileWriter\Driver;
+use \classes\Driver;
 
 $employee = new Driver;
 

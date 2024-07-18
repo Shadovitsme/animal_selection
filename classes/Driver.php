@@ -1,7 +1,6 @@
 <?php
-namespace classes\FileWriter;
+namespace classes;
 require_once '/home/ukki/www/obuchalovo/classes/Emploee.php';
-use classes\FileWriter\Emploee;
 
 class Driver extends Emploee
 {
