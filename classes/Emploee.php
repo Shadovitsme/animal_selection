@@ -24,6 +24,7 @@ class Emploee extends User
     {
         $this->salary = $salary;
     }
+    
 
 
 }
