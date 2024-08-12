@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://code.mu/ru/javascript/lib/jquery/book/prime/basis/pseudo-class-not/ -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script defer src="/home/ukki/www/obuchalovo/aaaa.js"></script>
+
+		<title>Псевдокласс :not в jQuery | Трепачёв Дмитрий</title>
+		
+		<link rel="stylesheet" href="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/list.css">
+		<link rel="stylesheet" href="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/styles.css">
+		<link rel="stylesheet" href="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/highlighter.css">
+		
+		<script type="text/javascript" async="" src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/watch.js"></script><script src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/highlighter.js"></script>
+		
+		<script src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/location.js"></script>
+		<script src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/locale.js"></script>
+		<script src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/main.js"></script>
+		
+		<meta name="yandex-verification" content="00eb45b7559e5c68">
+		<meta name="google-site-verification" content="Af0TM2OrwIEtjoQXxYz2-1C-21E1m7DB23_kWpE9sLg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="description" content="В данном уроке мы рассмотрим псевдокласс :not в jQuery.">
+		<link rel="shortcut icon" type="image/x-icon" href="https://code.mu/favicon.ico">
+	</head>
+	<body id="top">
+		<div class="wrapper">
+			<header>
+				<div class="top">
+	<div class="left"><img data-module="coder" src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/job.png" alt="" style="display: inline-block;"></div>
+	<div class="right">
+			</div>
+	<div class="center">
+			<a href="https://mentor.code.mu/">
+		Запись на курсы по HTML, CSS, JavaScript, PHP, фреймворкам и CMS,<br>
+		<b>а также</b>: помощь в поиске работы и заказов, стажировка
+		на реальных проектах→
+	</a>
+	</div>
+</div>								<nav data-module="mainmenu"><div class="sidebar"><div class="pointer"><span class="hash">⊗jqBsPCN</span><span class="num">24 of 113</span><a href="https://code.mu/ru/javascript/lib/jquery/book/prime/#r=/ru/javascript/lib/jquery/book/prime/basis/pseudo-class-not/" class="open-menu">menu</a></div></div><div class="header"></div><div class="arrow"><span>←</span></div>
+	<section class="main active">
+		<span data-href="/ru/markup/" data-open="markup">Верстка</span>
+		<span data-href="/ru/javascript/" data-open="javascript">JavaScript</span>
+		<span data-href="/ru/php/" data-open="php">PHP</span>
+		<span data-href="/ru/javascript/typescript/" data-open="typescript">TypeScript</span>
+		<span data-href="/ru/javascript/nodejs/" data-open="nodejs">NodeJS</span>
+		<span data-href="/ru/python/" data-open="python">Python</span>
+		<span data-href="/ru/java/" data-open="java">Java</span>
+		<span data-href="/ru/cpp/" data-open="cpp">C++</span>
+		<span data-href="/ru/rust/" data-open="rust">Rust</span>
+		<span data-href="/ru/sql/" data-open="sql">SQL</span>
+		<span data-href="/ru/javascript/framework/vue/" data-open="vue">Vue</span>
+		<span data-href="/ru/javascript/framework/react/" data-open="react">React</span>
+		<span data-href="/ru/javascript/framework/angular/" data-open="angular">Angular</span>
+		<span data-href="/ru/javascript/lib/jquery/" data-open="jquery" class="active">jQuery</span>
+		<span data-href="/ru/php/framework/laravel/" data-open="laravel">Laravel</span>
+		<span data-href="/ru/git/" data-open="git">Git</span>
+		<span data-href="/ru/tool/" data-open="tool">Tools</span>
+		<span data-href="/ru/internet/" data-open="internet">Internet</span>
+		<span data-href="/ru/theory/" data-open="theory">Теория</span>
+		<span data-open="social">Соц. сети</span>
+	</section>
+
+	<section class="sub" data-name="markup">
+		<a href="https://code.mu/ru/markup/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/markup/book/supreme/">Высший учебник</a>
+		<a href="https://code.mu/ru/markup/book/prep/less/">Учебник LESS</a>
+		<a href="https://code.mu/ru/markup/book/prep/sass/">Учебник SASS</a>
+		<a href="https://code.mu/ru/markup/manual/html/">Справочник HTML</a>
+		<a href="https://code.mu/ru/markup/manual/css/">Справочник CSS</a>
+	</section>
+
+	<section class="sub" data-name="php">
+		<a href="https://code.mu/ru/php/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/php/book/supreme/">Высший учебник</a>
+		<a href="https://code.mu/ru/php/book/oop/">Учебник ООП и MVC</a>
+		<a href="https://code.mu/ru/php/book/parsing/">Учебник парсинга</a>
+		<a href="https://code.mu/ru/php/tasker/stager/">Задачник по уровням</a>
+		<a href="https://code.mu/ru/php/manual/">Справочник</a>
+		<a href="https://code.mu/ru/php/video/lesson/">Видеоуроки</a>
+		<a href="https://code.mu/ru/php/faq/">FAQ</a>
+	</section>
+
+	<section class="sub" data-name="javascript">
+		<a href="https://code.mu/ru/javascript/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/javascript/book/practice/">Учебник практики</a>
+		<a href="https://code.mu/ru/javascript/book/supreme/">Высший учебник</a>
+		<a href="https://code.mu/ru/javascript/book/oop/">Учебник ООП</a>
+		<a href="https://code.mu/ru/javascript/tasker/stager/">Задачник по уровням</a>
+		<a href="https://code.mu/ru/javascript/manual/">Справочник</a>
+		<a href="https://code.mu/ru/javascript/video/lesson/">Видеоуроки</a>
+		<a href="https://code.mu/ru/javascript/mistake/">Ошибки</a>
+		<a href="https://code.mu/ru/javascript/faq/">FAQ</a>
+	</section>
+
+	<section class="sub" data-name="nodejs">
+		<a href="https://code.mu/ru/javascript/nodejs/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/javascript/nodejs/book/express/">Express</a>
+		<a href="https://code.mu/ru/javascript/nodejs/book/mongo/">Mongo</a>
+		<a href="https://code.mu/ru/javascript/nodejs/book/hosting/">Хостинг</a>
+		<a href="https://code.mu/ru/javascript/nodejs/manual/">Справочник</a>
+	</section>
+	
+	<section class="sub" data-name="python">
+		<a href="https://code.mu/ru/python/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/python/book/supreme/">Высший учебник</a>
+		<a href="https://code.mu/ru/python/manual/">Справочник</a>
+		<a href="https://code.mu/ru/python/faq/">FAQ</a>
+		<a href="https://code.mu/ru/python/tasker/stager/">Задачник по уровням</a>
+	</section>
+	
+	<section class="sub" data-name="java">
+		<a href="https://code.mu/ru/java/tasker/stager/">Задачник по уровням</a>
+	</section>
+	
+	<section class="sub" data-name="cpp">
+		<a href="https://code.mu/ru/cpp/tasker/stager/">Задачник по уровням</a>
+	</section>
+	
+	<section class="sub" data-name="rust">
+		<a href="https://code.mu/ru/rust/tasker/stager/">Задачник по уровням</a>
+	</section>
+	
+	<section class="sub" data-name="sql">
+		<a href="https://code.mu/ru/sql/manual/">Справочник</a>
+		<a href="https://code.mu/ru/sql/tasker/stager/">Задачник по уровням</a>
+	</section>
+
+	<section class="sub" data-name="typescript">
+		<a href="https://code.mu/ru/javascript/typescript/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/javascript/typescript/book/supreme/">Высший учебник</a>
+	</section>
+
+	<section class="sub" data-name="vue">
+		<a href="https://code.mu/ru/javascript/framework/vue/book/prime/">Основной учебник</a>
+	</section>
+
+	<section class="sub" data-name="react">
+		<a href="https://code.mu/ru/javascript/framework/react/book/prime/">Основной учебник</a>
+		<a href="https://code.mu/ru/javascript/framework/react/book/supreme/">Высший учебник</a>
+	</section>
+	
+	<section class="sub" data-name="angular">
+		<a href="https://code.mu/ru/javascript/framework/angular/book/prime/">Основной учебник</a>
+	</section>
+	
+	<section class="sub" data-name="jquery">
+		<a href="https://code.mu/ru/javascript/lib/jquery/book/prime/" class="active">Основной учебник</a>
+		<a href="https://code.mu/ru/javascript/lib/jquery/manual/">Справочник</a>
+	</section>
+
+	<section class="sub" data-name="laravel">
+		<a href="https://code.mu/ru/php/framework/laravel/book/prime/">Основной учебник</a>
+	</section>
+	
+	<section class="sub" data-name="git">
+		<a href="https://code.mu/ru/git/book/prime/">Основной учебник</a>
+	</section>
+	
+	<section class="sub" data-name="tool">
+		<a href="https://code.mu/ru/tool/terminal/">Командная строка</a>
+		<a href="https://code.mu/ru/tool/webpack/">Сборщик Webpack</a>
+		<a href="https://code.mu/ru/tool/gulp/">Сборщик Gulp</a>
+	</section>
+	
+	<section class="sub" data-name="internet">
+		<a href="https://code.mu/ru/internet/protocol/http/">Протокол HTTP</a>
+	</section>
+	
+	<section class="sub" data-name="theory">
+		<a href="https://code.mu/ru/theory/glossary/">Глоссарий</a>
+		<a href="https://code.mu/ru/theory/slang/">Сленг</a>
+	</section>
+	
+	<section class="sub" data-name="social">
+		<a href="https://vk.com/codemu">Паблик сайта code.mu</a>
+		<a href="https://t.me/javascript_tricker">Занимательные задачи JavaScript</a>
+		<a href="https://t.me/php_tricker">Занимательные задачи PHP</a>
+	</section>
+	
+	
+</nav>				<div class="info"><div><a href="https://t.me/+Ip2-wphg_edhMjAy" target="_blank">
+				Бесплатный курс по работе с базами данных SQL в NodeJS. Начало по готовности! Жми!
+			</a></div></div>			</header>
+			<main>
+				<h1>Псевдокласс :not в jQuery</h1>
+				<div class="content">
+<p>
+	Псевдокласс
+	<a href="https://code.mu/ru/javascript/lib/jquery/manual/selector/not/"><code class="selector inline">not</code></a>
+	исключает те элементы из найденных, которые
+	соответствуют указанному селектору.
+</p>
+<p>
+	Давайте в следующем задании получим и покрасим в красный
+	цвет все заголовки НЕ с классом <code class="selector inline">zzz</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="javascript"><span class="line-number line-number-level-1"></span><span class="token token-javascript token-function">$</span><span class="token token-javascript token-bracket">(</span><span class="token token-javascript token-string"><span class="token token-javascript token-plain">':headers:not(.zzz)'</span></span><span class="token token-javascript token-bracket">)</span><span class="token token-javascript token-punctuation">.</span><span class="token token-javascript token-method">css</span><span class="token token-javascript token-bracket">(</span><span class="token token-javascript token-string"><span class="token token-javascript token-plain">'color'</span></span><span class="token token-javascript token-punctuation">,</span><span class="token token-javascript token-plain"> <span class="break break-1-of-1"><br><span>	</span></span></span><span class="token token-javascript token-string"><span class="token token-javascript token-plain">'red'</span></span><span class="token token-javascript token-bracket">)</span><span class="token token-javascript token-punctuation">;<span class="break break-gap-of-1">&nbsp;</span></span></code>
+</div>
+<div class="task" id="1"><p class="header"> <span class="num">№1</span><span class="hash"><span>⊗jqBsPCN</span></span></p>
+	<p class="short">
+		Получите и покрасьте в красный
+		цвет все заголовки НЕ с классом <code class="selector inline">test</code>.
+	</p>
+</div>
+<div class="task" id="2"><p class="header"> <span class="num">№2</span><span class="hash"><span>⊗jqBsPCN</span></span></p>
+	<p class="short">
+		Получите и покрасьте в красный
+		цвет все <code class="code inline">h2</code> НЕ с классом <code class="selector inline">test</code>.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages" data-url="/ru/javascript/lib/jquery/book/prime/" data-persent="20" data-hash="jqBsPCN" data-quantity="113" data-num="24"><a href="https://code.mu/ru/javascript/lib/jquery/book/prime/basis/pseudo-class-header/" class="prev"><span class="arrow">←</span></a><a href="https://code.mu/ru/javascript/lib/jquery/book/prime/basis/pseudo-class-has/" class="next"><span class="arrow">→</span></a></section></div>			<footer>
+	<div class="contacts">
+	Трепачёв Дмитрий © 2012-2024 <br>
+	<a href="https://t.me/trepachev_dmitry">t.me/trepachev_dmitry</a>
+</div>	<div class="download">
+	<a href="https://code.mu/download/code.mu.off-0.0.2.zip">
+		скачать текущую <b>0.0.2</b> оффлайн версию сайта
+	</a> |
+	<a href="https://code.mu/download/code.mu.off-0.0.1.zip">
+		скачать предыдущую <b>0.0.1</b> оффлайн версию сайта
+	</a>
+</div>
+</footer>			<div class="jump">
+	<a href="https://code.mu/ru/javascript/lib/jquery/book/prime/basis/pseudo-class-not/#top" class="to-top">↑</a>
+</div>			<div class="langer">
+	</div>			</div>
+		
+		
+		<script src="./Псевдокласс _not в jQuery _ Трепачёв Дмитрий_files/metrika.js"></script>	
+</body></html>

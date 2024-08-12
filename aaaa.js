@@ -1,1 +1,1 @@
-$('h3').css({color: 'green', 'font-weight': '900'});
+$('p:contains("Получите")').css('color', 'red');
