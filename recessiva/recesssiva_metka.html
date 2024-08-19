@@ -2,14 +2,77 @@
 <html lang="en">
 
 <head>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- CSS -->
     <style>
+    body {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #18191C;
+    color: #e6dfdf;
+    font-family: "Roboto", sans-serif;
+  }
 
+table {
+  width: 650px;
+  border-top: 7px solid rgb(43, 129, 17);
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+}
+
+td {
+  text-align: left;
+	padding: 10px;
+	border: 3px solid rgb(43, 129, 17);
+}
+ th {
+  text-align: center;
+  padding: 10px;
+	border: 3px solid rgb(43, 129, 17);
+ }
+ input {
+    display: block;
+    text-align: center;
+    padding: auto;
+    border: 2px solid green;
+ }
+ button {
+    text-align: center;
+ }
     </style>
+    <div>
+        <table>
+            <tr id='0'>
+                <td>имя</td>
+                <td>цвет</td>
+                <td>кол-во пятен</td>
+                <td>особенности</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <form>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <button>add animal</button>
+        </form>
+    </div>
+
 </body>
+
+<!-- scripts -->
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script defer src="recessiva_try.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </html>
