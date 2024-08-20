@@ -7,46 +7,7 @@
 
 <body>
     <!-- CSS -->
-    <style>
-    body {
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 50px;
-    background-color: #18191C;
-    color: #e6dfdf;
-    font-family: "Roboto", sans-serif;
-  }
-
-table {
-  width: 650px;
-  border-top: 7px solid rgb(43, 129, 17);
-  border-collapse: collapse;
-  text-align: center;
-  margin-bottom: 20px;
-  border: 1px solid #dddddd;
-}
-
-td {
-  text-align: left;
-	padding: 10px;
-	border: 3px solid rgb(43, 129, 17);
-}
- th {
-  text-align: center;
-  padding: 10px;
-	border: 3px solid rgb(43, 129, 17);
- }
- input {
-    display: block;
-    text-align: center;
-    padding: auto;
-    border: 2px solid green;
- }
- button {
-    text-align: center;
- }
-    </style>
+<link type="text/css" rel="stylesheet" href="styles.css">
     <div>
         <table>
             <tr id='0'>
@@ -60,10 +21,10 @@ td {
     <br>
     <div>
         <form>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input id="name" type="text">
+            <input id="color" type="text">
+            <input id="spots" type="text">
+            <input id="features" type="text">
             <button>add animal</button>
         </form>
     </div>
