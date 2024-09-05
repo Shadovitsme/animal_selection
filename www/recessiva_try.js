@@ -9,25 +9,22 @@ class animal{
         this.male = male;
     }
 };
-//добавить ссылку на мать и отца добавить расчет степени родства при нажатии на элемент
-// 
+
 
 $("button").click(function(){
     let name = document.getElementById('name');
-    let color = document.getElementById('color');
-    let spots = document.getElementById('spots');
-    let features = document.getElementById('features');
-    let ani = new animal(name.value, color.value, spots.value, features.value);
-    console.log(name);
-    let i =0;
-    $(`tr#${i}`).after(
-        `<tr id = ${i++}>
-        <td>${ani.name}</td>
-        <td>${ani.color}</td>
-        <td>${ani.spots}</td>
-        <td>${ani.features}</td>
-        </tr>`
+    // let color = document.getElementById('color');
+    // let spots = document.getElementById('spots');
+    // let features = document.getElementById('features');
+    // let ani = new animal(name.value, color.value, spots.value, features.value);
+
+    $(`a#1`).after(
+        `<ul>
+        <li>
+        <a href="#" id =2 > dddd </a>
+        </li>
+        </ul>`
     )
-    i++;
     return false;
 });
+
