@@ -12,8 +12,6 @@ class animal{
 //добавить ссылку на мать и отца добавить расчет степени родства при нажатии на элемент
 // 
 
-
-
 $("button").click(function(){
     let name = document.getElementById('name');
     let color = document.getElementById('color');
